@@ -1,0 +1,162 @@
+ .input-container-dark,
+ .input-container-light {
+     position: relative;
+     width: 250px;
+     margin: 20px 0;
+     appearance: none;
+ }
+
+ .input-container-light {
+     margin: 0.5vh 0;
+ }
+
+ .input-container-dark input,
+ .input-container-light input {
+     width: 70%;
+     padding: 12px 8px;
+     font-size: 16px;
+     border: 2px solid #444;
+     border-radius: 8px;
+     outline: none;
+     color: #FFF;
+     font-family: Inter;
+     font-size: 15px;
+     font-style: normal;
+     font-weight: 200;
+     line-height: normal;
+     background: #1E1E1E;
+     box-shadow: 0px 8px 12px 6px rgba(0, 0, 0, 0.15), 0px 4px 4px 0px rgba(0, 0, 0, 0.30);
+ }
+
+ .input-container-light input {
+     color: #000000;
+     background-color: #ffff;
+     width: 165%;
+     box-shadow: none;
+ }
+
+ .input-container-dark .label-input,
+ .input-container-light .label-input {
+     position: absolute;
+     top: 12px;
+     left: 10px;
+     font-size: 18px;
+     color: #aaa;
+     background: #1E1E1E;
+     margin-left: -0.05vh;
+     padding: 0 4px;
+     transition: 0.3s ease-in-out;
+     pointer-events: none;
+ }
+
+ .input-container-dark textarea,
+ .input-container-light textarea {
+     width: 165%;
+     height: 100px;
+     padding: 12px 8px;
+     font-size: 16px;
+     border: 2px solid #444;
+     border-radius: 8px;
+     outline: none;
+     color: #FFF;
+     background: #1E1E1E;
+     resize: none;
+ }
+
+ .input-container-light textarea {
+     color: #000;
+     background-color: #fff;
+ }
+
+ .input-container-light .label-input {
+     width: 5vh;
+     background: #ffff;
+ }
+
+ .long {
+     width: 4vh;
+ }
+
+ .input-container-dark input:focus+.label-input,
+ .input-container-light input:focus+.label-input,
+ .input-container-dark input:not(:placeholder-shown)+.label-input,
+ .input-container-light input:not(:placeholder-shown)+.label-input {
+     top: -8px;
+     left: 15px;
+     font-size: 14px;
+     color: #fff;
+     width: 2vh;
+ }
+
+ .input-container-light input:focus+.label-input,
+ .input-container-light input:not(:placeholder-shown)+.label-input {
+     width: 6vh;
+     color: #000000;
+ }
+
+ .label-text-area {
+     position: absolute;
+     top: -8px;
+     left: 15px;
+     width: 8vh;
+     background-color: #ffff;
+     font-size: 14px;
+     color: #000000;
+ }
+
+ .label-text-deactivate {
+     position: absolute;
+     top: 12px;
+     left: 9.980px;
+     font-size: 18px;
+     color: #aaa;
+     background: #fff;
+     margin-left: -0.05vh;
+     padding: 0 4px;
+     transition: 0.3s ease-in-out;
+     pointer-events: none;
+ }
+
+ .example,
+ .example-light {
+     margin-top: 10px;
+     color: #FFF;
+     font-family: Inter;
+     font-size: 8px;
+     font-style: normal;
+     font-weight: 200;
+     line-height: normal;
+     visibility: hidden;
+ }
+
+ .example-light {
+     visibility: hidden;
+ }
+
+ @media (max-width: 400px) {
+     .input-container-light input {
+         width: 130%;
+     }
+
+     .input-container-light textarea {
+         width: 130%;
+     }
+
+     .label-text-area {
+         width: 12vh;
+     }
+
+     .input-container-light input:focus+.label-input,
+     .input-container-light input:not(:placeholder-shown)+.label-input {
+         width: 8vh;
+     }
+
+     .label-text-deactivate {
+         left: 1.5vh;
+     }
+
+     .input-container-light .label-input {
+         width: 8vh;
+     }
+
+ }

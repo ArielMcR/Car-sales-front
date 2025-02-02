@@ -1,0 +1,32 @@
+
+
+.button-choice,
+.button-choice-false,
+.button-choice-true {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 10vh;
+    height: 4vh;
+    margin: 1.2vh 2vh 2vh 2vh;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.button-choice {
+    background: #303030;
+    border: 2px solid #444;
+}
+
+.button-choice-true {
+    border: 1px solid #17F54B;
+    background: rgba(9, 117, 1, 0.45)
+}
+
+.button-choice-false {
+    border: 1px solid #9D0505;
+    background: rgba(99, 2, 4, 0.28);
+}
