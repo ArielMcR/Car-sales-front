@@ -41,7 +41,7 @@ export default function CarDetail() {
         slidesToShow: 4,
         slidesToScroll: 1,
         arrows: ViewportHeight <= 800 ? false : true,
-        dots: ViewportHeight <= 800 ? true : false,
+        dots: true,
         autoplay: true,
         autoplaySpeed: 5000,
         responsive: [
@@ -205,7 +205,7 @@ export default function CarDetail() {
                                     <h2 className="car-detail-vendor">
                                         Envie uma mensagem ao vendedor
                                     </h2>
-                                    <a href={`http://wa.me/55999907886?text=Olá, gostaria de saber se o veículo ${fake_car[0].model} na cor ${fake_car[0].color} ainda esta disponível ? `} className="button-whats">
+                                    <a href={`http://wa.me/5500000000?text=Olá, gostaria de saber se o veículo ${fake_car[0].model} na cor ${fake_car[0].color} ainda esta disponível ? `} className="button-whats">
                                         <img src={IMG.whats} alt="" />
                                         <div className="whats">
                                             <p>
@@ -236,7 +236,7 @@ export default function CarDetail() {
                         <Slider {...settings_others_cars}>
                             {carros.map((carro, index) => (
                                 <div key={carro.id} className="configure-others-cars" >
-                                    <Generic_card disableSlideImgs={true} key={carro.id} id={carro.id} model={carro.model} imgs={carro.imgs} mark={carro.mark} price={carro.price} bodywork={carro.bodywork} traction={carro.traction} year={carro.year} kilometers={carro.kilometers} />
+                                    <Generic_card isStock={true} disableSlideImgs={true} key={carro.id} id={carro.id} model={carro.model} imgs={carro.imgs} mark={carro.mark} price={carro.price} bodywork={carro.bodywork} traction={carro.traction} year={carro.year} kilometers={carro.kilometers} />
                                 </div>
                             ))}
                         </Slider>
@@ -279,7 +279,7 @@ export default function CarDetail() {
                             <h2 className="car-detail-vendor">
                                 Envie uma mensagem ao vendedor
                             </h2>
-                            <a href={`http://wa.me/55999907886?text=Olá, gostaria de saber se o veículo ${fake_car[0].model} na cor ${fake_car[0].color} ainda esta disponível ? `} className="button-whats">
+                            <a href={`http://wa.me/55000000000?text=Olá, gostaria de saber se o veículo ${fake_car[0].model} na cor ${fake_car[0].color} ainda esta disponível ? `} className="button-whats">
                                 <img src={IMG.whats} alt="" />
                                 <div className="whats">
                                     <p>

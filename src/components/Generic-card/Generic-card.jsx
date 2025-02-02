@@ -63,19 +63,19 @@ export default function Generic_card({
             <h6 className="card-car-bodywork">
                 {bodywork}
             </h6>
-            <h6 className="card-car-price">
+            <h6 className={`card-car-price ${ViewportHeight <= 678 ? "" : "long-text"}`} >
                 Preço: R$ {price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}
             </h6>
-            <h6 className="card-car-mark">
+            <h6 className={`card-car-mark ${ViewportHeight <= 678 ? "" : "long-text"}`}>
                 Marca: {mark}
             </h6>
-            <h6 className="card-car-traction">
+            <h6 className={`card-car-traction ${ViewportHeight <= 678 ? "" : "long-text"}`}>
                 Tração: {traction}
             </h6>
-            <h6 className="card-car-year">
+            <h6 className={`card-car-year ${ViewportHeight <= 678 ? "" : "long-text"}`}>
                 Ano: {year}
             </h6>
-            <h6 className="card-car-kilometers">
+            <h6 className={`card-car-kilometers ${ViewportHeight <= 678 ? "" : "long-text"}`}>
                 Quilometragem: {kilometers} km
             </h6>
         </NavLink>

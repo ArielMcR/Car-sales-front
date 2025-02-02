@@ -48,6 +48,10 @@
     line-height: normal;
 }
 
+.long-text {
+    font-size: 18px;
+}
+
 
 @media (max-width: 780px) {
     .card {
